@@ -7,32 +7,103 @@
   <meta name="keywords" content="Tailwind css practice" />
   <meta name="description" content="html tailwindcss practice" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&family=Poppins:wght@600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Poppins:wght@600&family=Urbanist:wght@500&display=swap"
     rel="stylesheet">
   <title>Miami Walker</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
 </head>
 
 <body class='w-[1440px] h-[8190px] flex flex-col m-auto border-2 border-blue-600'>
-
+  <!-- START HEADER  -->
   <header>
-    <div id="header_logo"><img src="./assets/images/Xest_Folio.svg" alt="xest folio label"></div>
-    <nav id="header_navigation">
-      <ul id="header_links_navigation">
-        <li><a href="#chapter-one">About</a>
-        <li><a href="#chapter-two">Service</a>
-        <li><a href="#chapter-three">Blogs</a>
-        <li><a href="#chapter-four">FAQ</a>
-      </ul>
-    </nav>
-    <button class="inline-flex items-start bg-black pl-[30px] pr-[30.39px] py-[20px]">
-      <span class="text-[14px] text-white leading-[13.87px]">Contact Me</span>
-    </button>
+    <div>
+      <img src="./assets/logos/xest_folio_logo.svg" alt="xest folio label">
+    </div>
+
+    <section>
+      <nav>
+        <ul class="font-secondary text-[18px] font-semibold leading-[150%]">
+          <li><a href="#chapter-one">About</a>
+          <li><a href="#chapter-two">Service</a>
+          <li><a href="#chapter-three">Blogs</a>
+          <li><a href="#chapter-four">FAQ</a>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="inline-flex items-start bg-black pl-[30px] pr-[30.39px] py-[20px]">
+          <span class="text-[18px] font-button text-white leading-[100%]">Contact
+            Me</span>
+        </button>
+        <!--  <div
+                class="w-[153.83px] h-[58px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%" /> -->
+      </div>
+    </section>
   </header>
+  <!-- END HEADER  -->
 
   <main>
+    <!-- SECTION 1   -->
     <section>
+      <div>
+        <div class="font-secondary text-[170px] font-extrabold uppercase not-italic">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-gradient-blue from-103.58% to-gradient-red to-0.72% leading-[150%]">
+            Miami
+          </span>
+        </div>
+        <div
+          class="font-secondary text-[170px] font-extrabold uppercase not-italic text-black -tracking-[8.5px] leading-[150%]">
+          <span>Walke<span class="text-gray-300">r</span></span>
+        </div>
+
+
+
+        <div
+          class="flex flex-col w-[580px] h-[62px] justify-center shrink-0 font-secondary font-normal text-[20px] text-gray-custom leading-[165%]">
+          <p class="">Award Wining
+            product
+            designer based in
+            Georgia.
+          </p>
+          <p>We
+            create
+            user-friendly
+            interfaces for fast-growing startups.
+          </p>
+        </div>
+
+        <div>
+          <button class="inline-flex items-start bg-black pl-[30px] pr-[30.39px] py-[20px]">
+            <span class="text-[18px] font-button text-white leading-[100%]">Book A Call</span>
+          </button>
+
+          <div class="w-[150.17px] h-[58px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%" />
+        </div>
+      </div>
+
+      <div class="w-[560px] h-[699px]">
+        <img src="./assets/images/unsplash_Vlbc1ScnRng.png" alt="pictures of girls with glasses">
+      </div>
     </section>
+
+    <!-- SECTION 2   -->
+
+    <section>
+      <div>
+        <p class="font-inter text-[19px] font-normal font-medium leading-[133%] tracking-[1px]">Trusted By
+        </p>
+        <div>
+          <img src="./assets/logos/paperz_logo.svg" alt="pictures of girls with glasses">
+          <img src="./assets/logos/dorfus_logo.svg" alt="pictures of girls with glasses">
+          <img src="./assets/logos/martino_logo.svg" alt="pictures of girls with glasses">
+          <img src="./assets/logos/square_logo.svg" alt="pictures of girls with glasses">
+          <img src="./assets/logos/gabona_logo.svg" alt="pictures of girls with glasses">
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer></footer>
