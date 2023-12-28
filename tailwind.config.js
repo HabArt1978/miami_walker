@@ -1,11 +1,16 @@
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./main.js", "./src/**/*.{js}"],
   theme: {
     extend: {
       colors: {
         "brand-primary": "#181818",
         "gradient-blue": "#3C33EF",
         "gradient-red": "#F43366",
-        "gray-custom": "#666666",
+        "gray-light": "#9ca3af",
+        "gray-medium": "#4b5563",
+        "gray-strong": "#374151",
+        "gray-deep": "#111827",
       },
       fontFamily: {
         primary: ['"Poppins"'],
@@ -13,6 +18,16 @@ tailwind.config = {
         button: ['"Urbanist"'],
         inter: ['"Inter"'],
       },
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
+      animation: {
+        gradient: "gradient 6s linear infinite",
+      },
     },
   },
+  plugins: [],
 };
