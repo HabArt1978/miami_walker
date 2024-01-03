@@ -1,1013 +1,1217 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&family=Urbanist:wght@500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Miami Walker</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&family=Urbanist:wght@500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <title>Miami Walker</title>
-</head>
+  <body class="w-full">
+    <header class="flex w-[880px] h-[77px] lg:w-[1140px] lg:h-[100px] mx-auto">
+      <a href="#" class="my-auto shrink-0">
+        <picture>
+          <source
+            srcset="/assets/for-desktop/logos/xest_folio_logo.svg"
+            media="(min-width: 1024px)" />
+          <img
+            src="/assets/for-tablets/logos/xest_folio_logo_md.svg"
+            alt="xest folio logo" />
+        </picture>
+      </a>
 
-<body class="w-full">
-  <header class="flex w-[880px] h-[77px] lg:w-[1140px] lg:h-[100px] mx-auto">
-
-    <a href="#" class="my-auto shrink-0">
-      <picture>
-        <source srcset="./public/assets/for-desktop/logos/xest_folio_logo.svg" media="(min-width: 1024px)">
-        <img src="./public/assets/for-tablets/logos/xest_folio_logo_md.svg" alt="xest folio logo">
-      </picture>
-    </a>
-
-    <nav class="flex items-center w-full">
-      <ul
-        class="flex w-full items-center justify-end space-x-[36px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%]">
-        <li><a href="#chapter-one">About</a></li>
-        <li><a href="#chapter-two">Service</a></li>
-        <li><a href="#chapter-three">Blogs</a></li>
-        <li><a href="#chapter-four">FAQ</a></li>
-        <li class="content-center">
-          <a href="#" class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-            <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-              Contact Me
-            </span>
-          </a>
-          <div
-            class="w-[120.69px] h-[46px] lg:w-[154.20px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91% ">
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="w-full">
-    <!-- START INTRODUCTION -->
-    <section class="w-[880px] mt-[48.6px] lg:w-[1140px] lg:mt-[63px] mx-auto">
-      <div class="flex mx-auto">
-        <div class="flex flex-col">
-          <h1 class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic leading-[150%]">
-            <span class="gradient-text text-transparent animate-gradient">
-              Miami
-            </span>
-          </h1>
-
-          <h1
-            class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic text-black -tracking-[6px] lg:-tracking-[8.5px] leading-[150%] z-10 mt-[-70px]">
-            Walke<span class="text-white">r</span>
-          </h1>
-
-          <div
-            class="flex flex-col w-[446.915px] h-[47.774px] lg:w-[580px] lg:h-[62px] text-[16px] lg:text-[20px] shrink-0 font-secondary font-normal text-gray-medium leading-[165%]">
-            <p>
-              Award Wining product designer based in Georgia. We <br> create user-friendly interfaces for fast-growing
-              startups.
-            </p>
-          </div>
-
-          <div class="mt-[48.54px] lg:mt-[63px]">
-            <a href="#" class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-              <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-                Book A Call
+      <nav class="flex items-center w-full">
+        <ul
+          class="flex w-full items-center justify-end space-x-[36px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%]">
+          <li><a href="#chapter-one">About</a></li>
+          <li><a href="#chapter-two">Service</a></li>
+          <li><a href="#chapter-three">Blogs</a></li>
+          <li><a href="#chapter-four">FAQ</a></li>
+          <li class="content-center">
+            <a
+              href="#"
+              class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
+              <span
+                class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
+                Contact Me
               </span>
             </a>
             <div
-              class="w-[117.81px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91% ">
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="w-[431.504px] h-[538.61px] lg:w-[580px] lg:h-[699px] ml-[-64px] lg:ml-[-85px] bg-[url('/assets/for-tablets/images/unsplash_Vlbc1ScnRng_md.png')] lg:bg-[url('/assets/for-desktop/images/unsplash_Vlbc1ScnRng.png')] bg-no-repeat">
-        </div>
-      </div>
-    </section>
-    <!-- END INTRODUCTION -->
-
-    <!-- START TRUSTED BY -->
-    <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
-      <div class="flex flex-col">
-        <h2 class="font-inter text-[20px] text-gray-strong font-medium leading-[133%] tracking-[1px] text-center">
-          Trusted By
-        </h2>
-
-        <ul class="flex justify-between">
-          <li>
-            <picture>
-              <source srcset="./public/assets/for-desktop/logos/paperz_logo.svg" media="(min-width: 1024px)">
-              <img src="./public/assets/for-tablets/logos/paperz_logo_md.svg" alt="paperz logo">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source srcset="./public/assets/for-desktop/logos/dorfus_logo.svg" media="(min-width: 1024px)">
-              <img src="./public/assets/for-tablets/logos/dorfus_logo_md.svg" alt="dorfus logo">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source srcset="./public/assets/for-desktop/logos/martino_logo.svg" media="(min-width: 1024px)">
-              <img src="./public/assets/for-tablets/logos/martino_logo_md.svg" alt="martino logo">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source srcset="./public/assets/for-desktop/logos/square_logo.svg" media="(min-width: 1024px)">
-              <img src="./public/assets/for-tablets/logos/square_logo_md.svg" alt="square logo">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source srcset="./public/assets/for-desktop/logos/gabona_logo.svg" media="(min-width: 1024px)">
-              <img src="./public/assets/for-tablets/logos/gabona_logo_md.svg" alt="gabona logo">
-            </picture>
+              class="w-[120.69px] h-[46px] lg:w-[154.20px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%"></div>
           </li>
         </ul>
-      </div>
-    </section>
-    <!-- END TRUSTED BY -->
+      </nav>
+    </header>
 
-    <!-- START FEATURES -->
-    <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
-
-      <div class="flex justify-between">
-        <div>
-          <div class="text-[14px] lg:text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
-            <h2>
+    <main class="w-full">
+      <!-- START INTRODUCTION -->
+      <section class="w-[880px] mt-[48.6px] lg:w-[1140px] lg:mt-[63px] mx-auto">
+        <div class="flex mx-auto">
+          <div class="flex flex-col">
+            <h1
+              class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic leading-[150%]">
               <span class="gradient-text text-transparent animate-gradient">
-                FEATURES
+                Miami
               </span>
-            </h2>
-          </div>
+            </h1>
 
-          <h3
-            class="w-[339px] h-[86px] lg:w-[423px] lg:h-[108px] text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
-            Giving Your Business Some Great Ideas
-          </h3>
+            <h1
+              class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic text-black -tracking-[6px] lg:-tracking-[8.5px] leading-[150%] z-10 mt-[-70px]">
+              Walke<span class="text-white">r</span>
+            </h1>
 
-          <div class="w-[363px] lg:w-[470px] mt-[32px] h-auto shrink-0">
-            <p class="text-[12px] lg:text-[16px] text-gray-light font-secondary font-medium not-italic leading-[140%]">
-              Every designer needs the right tools to do the perfect job. Thankfully, we can do that. I design
-              products
-              that
-              are more than pretty. I make them shippable and usable.</p>
-          </div>
-
-          <div class="mt-[33px] lg:mt-[40px]">
-            <a href="#" class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-              <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-                Contact US
-              </span>
-            </a>
             <div
-              class="w-[117.81px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
+              class="flex flex-col w-[446.915px] h-[47.774px] lg:w-[580px] lg:h-[62px] text-[16px] lg:text-[20px] shrink-0 font-secondary font-normal text-gray-medium leading-[165%]">
+              <p>
+                Award Wining product designer based in Georgia. We <br />
+                create user-friendly interfaces for fast-growing startups.
+              </p>
+            </div>
+
+            <div class="mt-[48.54px] lg:mt-[63px]">
+              <a
+                href="#"
+                class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
+                <span
+                  class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
+                  Book A Call
+                </span>
+              </a>
+              <div
+                class="w-[117.81px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%"></div>
             </div>
           </div>
 
-        </div>
-
-        <div class="flex w-[650px]">
-          <div class="flex flex-wrap justify-end [&>*:nth-child(1n)]:mr-[30px] [&>*:nth-child(2n)]:mr-[10px]">
-            <div class="mt-[60px]">
-              <picture>
-                <source srcset="./public/assets/for-desktop/images/ux_experience.png" media="(min-width: 1024px)">
-                <img src="./public/assets/for-tablets/images/ux_experience_md.png" alt="ux experience process image" />
-              </picture>
-              <div>
-                <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
-                  UX Experience
-                </h4>
-                <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary  not-italic font-medium leading-[140%]">
-                  I design products that are more than pretty. I make them usable.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <picture>
-                <source srcset="./public/assets/for-desktop/images/product_analysis.png" media="(min-width: 1024px)">
-                <img src="./public/assets/for-tablets/images/product_analysis_md.png"
-                  alt="product analysis process image" />
-              </picture>
-              <div>
-                <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
-                  Product Analysis
-                </h4>
-                <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
-                  I design products that are more than pretty. I make them usable.
-                </p>
-              </div>
-            </div>
-
-            <div class="mt-[60px]">
-              <picture>
-                <source srcset="./public/assets/for-desktop/images/ui_design.png" media="(min-width: 1024px)">
-                <img src="./public/assets/for-tablets/images/ui_design_md.png" alt="ui design process image" />
-              </picture>
-              <div>
-                <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
-                  UI Design
-                </h4>
-                <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
-                  I design products that are more than pretty. I make them usable.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <picture>
-                <source srcset="./public/assets/for-desktop/images/product_design.png" media="(min-width: 1024px)">
-                <img src="./public/assets/for-tablets/images/product_design_md.png"
-                  alt="product design process image" />
-              </picture>
-
-              <div>
-                <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
-                  Product Design
-                </h4>
-                <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
-                  I design products that are more than pretty. I make them usable.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-between text-center mt-[100px]">
-        <div>
-          <span class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%]
-            gradient-border-text animate-gradient">
-            12K+
-          </span>
-          <p class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
-            Project Complete
-          </p>
-        </div>
-        <div>
-          <span class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%]
-          gradient-border-text animate-gradient">
-            7K+
-          </span>
-          <p class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
-            Happy
-            Client
-          </p>
-        </div>
-        <div>
-          <span class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%]
-          gradient-border-text animate-gradient">
-            10+
-          </span>
-          <p class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
-            Years
-            Experience</p>
-        </div>
-        <div>
-          <span class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%]
-          gradient-border-text animate-gradient">
-            270+
-          </span>
-          <p class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
-            Win
-            Awards
-          </p>
-        </div>
-      </div>
-
-    </section>
-    <!-- END FEATURES -->
-
-    <!-- START PORTFOLIO -->
-    <section class="w-[880px] lg:w-[1140px] my-[100px] lg:my-[150px] mx-auto ">
-      <div class="flex justify-between">
-        <div>
           <div
-            class="text-[14px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
-            <h2>
-              <span class="gradient-text text-transparent animate-gradient">
-                Portfolio
-              </span>
-            </h2>
-          </div>
-
-          <h3 class="text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
-            Some Of Our Best Works
-          </h3>
+            class="w-[431.504px] h-[538.61px] lg:w-[580px] lg:h-[699px] ml-[-64px] lg:ml-[-85px] bg-[url('/assets/for-tablets/images/unsplash_Vlbc1ScnRng_md.png')] lg:bg-[url('/assets/for-desktop/images/unsplash_Vlbc1ScnRng.png')] bg-no-repeat"></div>
         </div>
+      </section>
+      <!-- END INTRODUCTION -->
 
+      <!-- START TRUSTED BY -->
+      <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
+        <div class="flex flex-col">
+          <h2
+            class="font-inter text-[20px] text-gray-strong font-medium leading-[133%] tracking-[1px] text-center">
+            Trusted By
+          </h2>
 
-        <div class="mt-auto">
-          <button class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-            <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-              Load More
-            </span>
-          </button>
-          <div
-            class="w-[114px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
-          </div>
+          <ul class="flex justify-between">
+            <li>
+              <picture>
+                <source
+                  srcset="/assets/for-desktop/logos/paperz_logo.svg"
+                  media="(min-width: 1024px)" />
+                <img
+                  src="/assets/for-tablets/logos/paperz_logo_md.svg"
+                  alt="paperz logo" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="/assets/for-desktop/logos/dorfus_logo.svg"
+                  media="(min-width: 1024px)" />
+                <img
+                  src="/assets/for-tablets/logos/dorfus_logo_md.svg"
+                  alt="dorfus logo" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="/assets/for-desktop/logos/martino_logo.svg"
+                  media="(min-width: 1024px)" />
+                <img
+                  src="/assets/for-tablets/logos/martino_logo_md.svg"
+                  alt="martino logo" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="/assets/for-desktop/logos/square_logo.svg"
+                  media="(min-width: 1024px)" />
+                <img
+                  src="/assets/for-tablets/logos/square_logo_md.svg"
+                  alt="square logo" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="/assets/for-desktop/logos/gabona_logo.svg"
+                  media="(min-width: 1024px)" />
+                <img
+                  src="/assets/for-tablets/logos/gabona_logo_md.svg"
+                  alt="gabona logo" />
+              </picture>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
+      <!-- END TRUSTED BY -->
 
-      <div
-        class="flex flex-nowrap lg:flex-wrap mt-[60px] [&>*:is(picture)]:mr-2o lg:[&>*:is(picture)]:mr-auto lg:[&>*:is(picture:nth-child(3n))]:mr-0 lg:[&>*:is(picture:nth-last-child(n+4))]:mb-[20px]">
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1024px)">
-          <img src="./public/assets/for-tablets/images/portfolio_photo_1_md.png" alt="portfolio photos 1">
-          <div class="flex flex-col mt-[-75px] lg:mt-[-100px] pl-[25px] lg:pl-[39px]">
-            <div
-              class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
-              <span class="gradient-text text-transparent animate-gradient">
-                UI Design
-              </span>
-            </div>
-
-            <span class="font-primary text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
-              Greenfy Website
-            </span>
-          </div>
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_2_md.png"
-            alt="portfolio photos 2">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_3_md.png"
-            alt="portfolio photos 3">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_3_md.png"
-            alt="portfolio photos 4">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_2_md.png"
-            alt="portfolio photos 5">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_1_md.png"
-            alt="portfolio photos 7">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_1_md.png"
-            alt="portfolio photos 8">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_2_md.png"
-            alt="portfolio photos 8">
-        </picture>
-
-        <picture>
-          <source srcset="./public/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1024px)">
-          <img class="portfolio-images-style" src="./public/assets/for-tablets/images/portfolio_photo_3_md.png"
-            alt="portfolio photos 9" />
-        </picture>
-      </div>
-    </section>
-    <!-- END PORTFOLIO -->
-
-    <!-- START LATEST BLOG -->
-    <section class='bg-brand-primary'>
-      <div class="w-[1140px] mx-auto py-[150px] bg-brand-primary">
-
+      <!-- START FEATURES -->
+      <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
         <div class="flex justify-between">
-
-          <div class="w-[447px] h-[108px]">
-            <div class="text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
+          <div>
+            <div
+              class="text-[14px] lg:text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
               <h2>
                 <span class="gradient-text text-transparent animate-gradient">
-                  LATEST BLOG
+                  FEATURES
                 </span>
               </h2>
             </div>
 
-            <h3 class="font-primary text-[40px] text-white font-semibold leading-[135%]">
-              Check Some of Latest News & Articles
+            <h3
+              class="w-[339px] h-[86px] lg:w-[423px] lg:h-[108px] text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
+              Giving Your Business Some Great Ideas
+            </h3>
+
+            <div class="w-[363px] lg:w-[470px] mt-[32px] h-auto shrink-0">
+              <p
+                class="text-[12px] lg:text-[16px] text-gray-light font-secondary font-medium not-italic leading-[140%]">
+                Every designer needs the right tools to do the perfect job.
+                Thankfully, we can do that. I design products that are more than
+                pretty. I make them shippable and usable.
+              </p>
+            </div>
+
+            <div class="mt-[33px] lg:mt-[40px]">
+              <a
+                href="#"
+                class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
+                <span
+                  class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
+                  Contact US
+                </span>
+              </a>
+              <div
+                class="w-[117.81px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%"></div>
+            </div>
+          </div>
+
+          <div class="flex w-[650px]">
+            <div
+              class="flex flex-wrap justify-end [&>*:nth-child(1n)]:mr-[30px] [&>*:nth-child(2n)]:mr-[10px]">
+              <div class="mt-[60px]">
+                <picture>
+                  <source
+                    srcset="
+                      /assets/for-desktop/images/ux_experience.png
+                    "
+                    media="(min-width: 1024px)" />
+                  <img
+                    src="/assets/for-tablets/images/ux_experience_md.png"
+                    alt="ux experience process image" />
+                </picture>
+                <div>
+                  <h4
+                    class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                    UX Experience
+                  </h4>
+                  <p
+                    class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                    I design products that are more than pretty. I make them
+                    usable.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <picture>
+                  <source
+                    srcset="
+                      /assets/for-desktop/images/product_analysis.png
+                    "
+                    media="(min-width: 1024px)" />
+                  <img
+                    src="/assets/for-tablets/images/product_analysis_md.png"
+                    alt="product analysis process image" />
+                </picture>
+                <div>
+                  <h4
+                    class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                    Product Analysis
+                  </h4>
+                  <p
+                    class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                    I design products that are more than pretty. I make them
+                    usable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[60px]">
+                <picture>
+                  <source
+                    srcset="/assets/for-desktop/images/ui_design.png"
+                    media="(min-width: 1024px)" />
+                  <img
+                    src="/assets/for-tablets/images/ui_design_md.png"
+                    alt="ui design process image" />
+                </picture>
+                <div>
+                  <h4
+                    class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                    UI Design
+                  </h4>
+                  <p
+                    class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                    I design products that are more than pretty. I make them
+                    usable.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <picture>
+                  <source
+                    srcset="
+                      /assets/for-desktop/images/product_design.png
+                    "
+                    media="(min-width: 1024px)" />
+                  <img
+                    src="/assets/for-tablets/images/product_design_md.png"
+                    alt="product design process image" />
+                </picture>
+
+                <div>
+                  <h4
+                    class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                    Product Design
+                  </h4>
+                  <p
+                    class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                    I design products that are more than pretty. I make them
+                    usable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-between text-center mt-[100px]">
+          <div>
+            <span
+              class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%] gradient-border-text animate-gradient">
+              12K+
+            </span>
+            <p
+              class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
+              Project Complete
+            </p>
+          </div>
+          <div>
+            <span
+              class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%] gradient-border-text animate-gradient">
+              7K+
+            </span>
+            <p
+              class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
+              Happy Client
+            </p>
+          </div>
+          <div>
+            <span
+              class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%] gradient-border-text animate-gradient">
+              10+
+            </span>
+            <p
+              class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
+              Years Experience
+            </p>
+          </div>
+          <div>
+            <span
+              class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%] gradient-border-text animate-gradient">
+              270+
+            </span>
+            <p
+              class="text-[13px] lg:text-[16px] font-secondary not-italic font-semibold text-gray-strong leading-[140%]">
+              Win Awards
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END FEATURES -->
+
+      <!-- START PORTFOLIO -->
+      <section class="w-[880px] lg:w-[1140px] my-[100px] lg:my-[150px] mx-auto">
+        <div class="flex justify-between">
+          <div>
+            <div
+              class="text-[14px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+              <h2>
+                <span class="gradient-text text-transparent animate-gradient">
+                  Portfolio
+                </span>
+              </h2>
+            </div>
+
+            <h3
+              class="text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
+              Some Of Our Best Works
             </h3>
           </div>
 
-          <div class="self-center">
-            <button class="inline-flex items-start bg-white pl-[30px] pr-[30.39px] py-[20px]">
-              <span class="text-[18px] font-button font-medium not-italic text-gray-strong leading-[100%]">
+          <div class="mt-auto">
+            <button
+              class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
+              <span
+                class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
                 Load More
               </span>
             </button>
-
             <div
-              class="w-[145.51px] h-[58px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91% mt-[-50px] ml-[7px]">
-            </div>
+              class="w-[114px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%"></div>
           </div>
-
         </div>
 
         <div
-          class="flex justify-between flex-wrap mt-[100px] [&>*:nth-child(2n)]:mb-20 [&>*:nth-last-child(-n+2)]:mb-0">
-
-          <!-- CARD 1 -->
-
-          <div class="relative w-[533px] h-[545px] text-white">
-
-            <img src="./public/assets/for-desktop/images/layer_expert_1.png" alt="development photo" />
-
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
-              </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
-
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
+          class="flex lg:flex-wrap overflow-x-auto mt-[60px] [&>*:is(picture)]:mr-4 lg:[&>*:is(picture)]:mr-auto lg:[&>*:is(picture:nth-child(3n))]:mr-0 lg:[&>*:is(picture:nth-last-child(n+4))]:mb-[20px]">
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_1.png"
+              media="(min-width: 1024px)" />
+            <img
+              src="/assets/for-tablets/images/portfolio_photo_1_md.png"
+              alt="portfolio photos 1" />
+            <div
+              class="flex flex-col mt-[-75px] lg:mt-[-100px] pl-[25px] lg:pl-[39px]">
+              <div
+                class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+                <span class="gradient-text text-transparent animate-gradient">
+                  UI Design
+                </span>
               </div>
 
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./public/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
-            </div>
-
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="relative w-[533px] h-[545px] text-white">
-
-            <img src="./public/assets/for-desktop/images/layer_expert_2.png" alt="development photo" />
-
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
+              <span
+                class="font-primary text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
+                Greenfy Website
               </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
-
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
-              </div>
-
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./public/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
             </div>
+          </picture>
 
-          </div>
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_2.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_2_md.png"
+              alt="portfolio photos 2" />
+          </picture>
 
-          <!-- CARD 3 -->
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_3.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_3_md.png"
+              alt="portfolio photos 3" />
+          </picture>
 
-          <div class="relative w-[533px] h-[545px] text-white">
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_3.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_3_md.png"
+              alt="portfolio photos 4" />
+          </picture>
 
-            <img src="./public/assets/for-desktop/images/layer_expert_1.png" alt="development photo" />
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_2.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_2_md.png"
+              alt="portfolio photos 5" />
+          </picture>
 
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
-              </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_1.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_1_md.png"
+              alt="portfolio photos 7" />
+          </picture>
 
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
-              </div>
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_1.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_1_md.png"
+              alt="portfolio photos 8" />
+          </picture>
 
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./public/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
-            </div>
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_2.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_2_md.png"
+              alt="portfolio photos 8" />
+          </picture>
 
-          </div>
-
-          <!-- CARD 4 -->
-
-          <div class="relative w-[533px] h-[545px] text-white">
-
-            <img src="./public/assets/for-desktop/images/layer_expert_2.png" alt="development photo" />
-
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
-              </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
-
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
-              </div>
-
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./public/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
-            </div>
-
-          </div>
-
-          <!-- CARD 5 -->
-
-          <div class="relative w-[533px] h-[545px] text-white">
-
-            <img src="./assets/for-desktop/images/layer_expert_1.png" alt="development photo" />
-
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
-              </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
-
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
-              </div>
-
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
-            </div>
-
-          </div>
-
-          <!-- CARD 6 -->
-
-          <div class="relative w-[533px] h-[545px] text-white">
-
-            <img src="./assets/for-desktop/images/layer_expert_2.png" alt="development photo" />
-
-            <div class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
-                UI Design | 22 May 2023
-              </span>
-              <h4 class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
-                What is UI Design in Front End Design?
-              </h4>
-
-              <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
-                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                  born
-                  and
-                  I will give you a complete account of the system
-                </p>
-              </div>
-
-              <a
-                class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
-                <span class="pr-2">READ MORE</span>
-                <img src="./assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
-                  class="-rotate-135 shrink-0 self-center" />
-              </a>
-            </div>
-
-          </div>
-
+          <picture class="flex-shrink-0">
+            <source
+              srcset="/assets/for-desktop/images/portfolio_photo_3.png"
+              media="(min-width: 1024px)" />
+            <img
+              class="portfolio-images-style"
+              src="/assets/for-tablets/images/portfolio_photo_3_md.png"
+              alt="portfolio photos 9" />
+          </picture>
         </div>
-      </div>
-    </section>
-    <!-- END LATEST BLOG -->
+      </section>
+      <!-- END PORTFOLIO -->
 
-    <!-- START TESTIMONIALS -->
-    <section class="w-full px-auto mt-[150px] bg-white">
-      <div class="flex flex-col justify-center">
-
-        <div class="text-[16px] text-center font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
-          <h2>
-            <span class="gradient-text text-transparent animate-gradient">
-              Testimonials
-            </span>
-          </h2>
-        </div>
-
-        <h3 class="font-primary text-[40px] text-center text-gray-strong font-semibold leading-[135%] mt-[20px]">
-          What our customer say
-        </h3>
-
-        <div class="testimonials-scroll-container-style [&>*:not(:first-child)]:shadow-lg [&>*:first-child]:shadow-lg">
-
-          <!-- TESTIMONIALS CARD 1 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-lg">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
-            </div>
-
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_1.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Berry Gunawan
-                </p>
+      <!-- START LATEST BLOG -->
+      <section class="bg-brand-primary">
+        <div class="w-[1140px] mx-auto py-[150px] bg-brand-primary">
+          <div class="flex justify-between">
+            <div class="w-[447px] h-[108px]">
+              <div
+                class="text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
+                <h2>
+                  <span class="gradient-text text-transparent animate-gradient">
+                    LATEST BLOG
+                  </span>
+                </h2>
               </div>
 
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[10px]">
-                  3.5
-                </p>
-              </div>
+              <h3
+                class="font-primary text-[40px] text-white font-semibold leading-[135%]">
+                Check Some of Latest News & Articles
+              </h3>
+            </div>
 
+            <div class="self-center">
+              <button
+                class="inline-flex items-start bg-white pl-[30px] pr-[30.39px] py-[20px]">
+                <span
+                  class="text-[18px] font-button font-medium not-italic text-gray-strong leading-[100%]">
+                  Load More
+                </span>
+              </button>
+
+              <div
+                class="w-[145.51px] h-[58px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91% mt-[-50px] ml-[7px]"></div>
             </div>
           </div>
 
-          <!-- TESTIMONIALS CARD 2 -->
+          <div
+            class="flex justify-between flex-wrap mt-[100px] [&>*:nth-child(2n)]:mb-20 [&>*:nth-last-child(-n+2)]:mb-0">
+            <!-- CARD 1 -->
 
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-lg">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto ">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
-            </div>
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="/assets/for-desktop/images/layer_expert_1.png"
+                alt="development photo" />
 
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_2.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Janne Cooper
-                </p>
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="/assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
+            </div>
 
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
-                  4.5
-                </p>
+            <!-- CARD 2 -->
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="/assets/for-desktop/images/layer_expert_2.png"
+                alt="development photo" />
+
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="/assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
-
-            </div>
-          </div>
-
-          <!-- TESTIMONIALS CARD 3 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-xl">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
             </div>
 
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_3.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Cobocannaeru
-                </p>
+            <!-- CARD 3 -->
+
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="/assets/for-desktop/images/layer_expert_1.png"
+                alt="development photo" />
+
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="/assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
+            </div>
 
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
-                  3.5
-                </p>
+            <!-- CARD 4 -->
+
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="/assets/for-desktop/images/layer_expert_2.png"
+                alt="development photo" />
+
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="/assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
-
-            </div>
-          </div>
-
-
-          <!-- TESTIMONIALS CARD 4 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-lg">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
             </div>
 
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_1.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Berry Gunawan
-                </p>
+            <!-- CARD 5 -->
+
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="./assets/for-desktop/images/layer_expert_1.png"
+                alt="development photo" />
+
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="./assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
+            </div>
 
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[10px]">
-                  3.5
-                </p>
+            <!-- CARD 6 -->
+
+            <div class="relative w-[533px] h-[545px] text-white">
+              <img
+                src="./assets/for-desktop/images/layer_expert_2.png"
+                alt="development photo" />
+
+              <div
+                class="absolute right-0 top-[275px] pl-[20px] pt-[10px] bg-brand-primary">
+                <span
+                  class="text-[#888] font-secondary text-[13px] not-italic font-medium leading-[140%]">
+                  UI Design | 22 May 2023
+                </span>
+                <h4
+                  class="w-[392px] h-[82px] text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                  What is UI Design in Front End Design?
+                </h4>
+
+                <div class="w-[433px] h-[66px] mt-[20px] shrink-0">
+                  <p
+                    class="text-[#AAA] font-secondary text-[16px] not-italic font-medium leading-[140%]">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system
+                  </p>
+                </div>
+
+                <a
+                  class="inline-flex items-center font-secondary text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[20px] py-[10px]">
+                  <span class="pr-2">READ MORE</span>
+                  <img
+                    src="./assets/for-desktop/icons/arrow.svg"
+                    alt="arrow svg icon"
+                    width="20px"
+                    height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </a>
               </div>
-
             </div>
-          </div>
-
-          <!-- TESTIMONIALS CARD 5 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-lg">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto ">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
-            </div>
-
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_2.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Janne Cooper
-                </p>
-              </div>
-
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
-                  4.5
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- TESTIMONIALS CARD 6 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-xl">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
-            </div>
-
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_3.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Cobocannaeru
-                </p>
-              </div>
-
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
-                  3.5
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- TESTIMONIALS CARD 7 -->
-
-          <div class="flex flex-col w-[545px] h-[256px] shrink-0 p-[20px] rounded-xl">
-            <div class="mb-auto">
-              <img src="./assets/for-desktop/icons/quote-up.svg" alt="quote up" />
-            </div>
-            <div class="my-auto">
-              <p class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
-                “Now, i can track my business activity with easier and have a great understandable to operate the
-                products
-              </p>
-            </div>
-
-            <div class="flex justify-between mt-auto">
-              <div class="flex">
-                <img src="./assets/for-desktop/avatars/user_avatar_1.svg" alt="user avatar">
-                <p
-                  class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
-                  Berry Gunawan
-                </p>
-              </div>
-
-              <div class="flex self-center">
-                <img src="./assets/for-desktop/icons/star.svg" alt="star icon" class="w-[24px] h-[24px]">
-                <p class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
-                  3.5
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- END TESTIMONIALS -->
-
-    <!-- START FAQs -->
-    <section class='w-full mx-auto bg-brand-primary'>
-      <div class="flex w-full justify-center py-[150px] bg-brand-primary bg space-x-[100px]">
-        <div class="flex flex-col [&>*:not(:last-child)]:mb-[20px]">
-          <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
-            <select id="question_1" class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
-              <option selected>How can we help your business?</option>
-              <option value="option_1">Option 1</option>
-              <option value="option_2">Option 2</option>
-              <option value="option_3">Option 3</option>
-              <option value="option_4">Option 4</option>
-            </select>
-          </div>
-
-          <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
-            <select id="question_2" class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
-              <option selected>What are the advantages of Bisnext</option>
-              <option value="option_1">Option 1</option>
-              <option value="option_2">Option 2</option>
-              <option value="option_3">Option 3</option>
-              <option value="option_4">Option 4</option>
-            </select>
-          </div>
-
-          <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
-            <select id="question_3" class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
-              <option selected>Let’s find an office near you?</option>
-              <option value="option_1">Option 1</option>
-              <option value="option_2">Option 2</option>
-              <option value="option_3">Option 3</option>
-              <option value="option_4">Option 4</option>
-            </select>
-          </div>
-
-          <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
-            <select id="question_4" class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
-              <option selected>How IT consultancy experts work?</option>
-              <option value="option_1">Option 1</option>
-              <option value="option_2">Option 2</option>
-              <option value="option_3">Option 3</option>
-              <option value="option_4">Option 4</option>
-            </select>
           </div>
         </div>
+      </section>
+      <!-- END LATEST BLOG -->
 
-        <div>
-          <div class="text-[14px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
-            <h2>
-              <span class="gradient-text text-transparent animate-gradient">
-                FAQs
-              </span>
-            </h2>
-          </div>
-
-          <h3 class="w-[415px] h-[108px] font-primary text-[40px] text-white font-semibold leading-[135%] mt-[20px]">
-            Be Kind to Your Mind Question & Answer
-          </h3>
-
-          <div class="w-[470px] h-auto shrink-0 mt-[30px]">
-            <p class="text-[#AAA] text-[16px] font-secondary font-medium not-italic leading-[144%]">
-              Every designer needs the right tools to do the perfect job. Thankfully, we can do that. I design
-              products
-              that
-              are more than pretty. I make them shippable and usable.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- END FAQs -->
-
-    <!-- START <<Have you project in mind?>> -->
-
-    <section class="w-[1140px] mx-auto py-[150px] bg-white">
-      <div class="flex flex-col items-center">
+      <!-- START TESTIMONIALS -->
+      <section class="w-full px-auto mt-[150px] bg-white">
         <div class="flex flex-col justify-center">
-          <div class="text-[16px] text-center font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+          <div
+            class="text-[16px] text-center font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
             <h2>
               <span class="gradient-text text-transparent animate-gradient">
-                Have you project in mind?
+                Testimonials
               </span>
             </h2>
           </div>
 
           <h3
-            class="w-[668px] h-[162px] mt-[15px] font-primary text-[60px] text-center text-gray-strong font-semibold leading-[135%]">
-            Let’s Make Something Great Together!
+            class="font-primary text-[40px] text-center text-gray-strong font-semibold leading-[135%] mt-[20px]">
+            What our customer say
           </h3>
 
-          <a href="#"
-            class="w-[250px] h-[250px] mt-[37px] shrink-0 rounded-full bg-[url('/assets/for-desktop/bg/BG.svg')] bg-contain bg-no-repeat relative self-center">
-            <span
-              class="w-[190px] text-white font-secondary text-[16px] not-italic font-semibold leading-[140%] tracking-[2.88px] absolute bottom-[46%] left-1/2 -translate-x-1/2">
-              CONTACT WITH US
-            </span>
-            <img src="./assets/for-desktop/icons/arrow_2.svg" alt="arrow icon image"
-              class="w-[24px] h-[24px] absolute bottom-[30%] left-1/2 -translate-x-1/2">
-          </a>
-        </div>
+          <div
+            class="testimonials-scroll-container-style [&>*:not(:first-child)]:shadow-lg [&>*:first-child]:shadow-lg">
+            <!-- TESTIMONIALS CARD 1 -->
 
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-lg">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
 
-        <div class="mt-[100px]">
-          <a href="#">
-            <img src="./assets/for-desktop/logos/xest_folio_logo.svg" alt="xest folio label">
-          </a>
-        </div>
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_1.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Berry Gunawan
+                  </p>
+                </div>
 
-        <div class="flex w-full justify-between mt-[100px]">
-          <img src="./assets/for-desktop/logos/f_logo.svg" alt="f logo">
-          <img src="./assets/for-desktop/logos/in_logo.svg" alt="in logo">
-          <img src="./assets/for-desktop/logos/instagram_logo.svg" alt="instagram logos">
-          <img src="./assets/for-desktop/logos/be_logo.svg" alt="be logo">
-          <img src="./assets/for-desktop/logos/ball_logo.svg" alt="ball logo">
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[10px]">
+                    3.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 2 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-lg">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_2.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Janne Cooper
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
+                    4.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 3 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-xl">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_3.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Cobocannaeru
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
+                    3.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 4 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-lg">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_1.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Berry Gunawan
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[10px]">
+                    3.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 5 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-lg">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_2.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Janne Cooper
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
+                    4.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 6 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-xl">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_3.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Cobocannaeru
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
+                    3.5
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS CARD 7 -->
+
+            <div class="flex flex-col w-[545px] h-[256px] p-[20px] rounded-xl">
+              <div class="mb-auto">
+                <img
+                  src="./assets/for-desktop/icons/quote-up.svg"
+                  alt="quote up" />
+              </div>
+              <div class="my-auto">
+                <p
+                  class="text-gray-medium font-primary text-[18px] not-italic font-normal leading-[180%]">
+                  “Now, i can track my business activity with easier and have a
+                  great understandable to operate the products
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-auto">
+                <div class="flex">
+                  <img
+                    src="./assets/for-desktop/avatars/user_avatar_1.svg"
+                    alt="user avatar" />
+                  <p
+                    class="self-center ml-[14px] text-gray-medium font-primary text-[16px] not-italic font-normal leading-[180%]">
+                    Berry Gunawan
+                  </p>
+                </div>
+
+                <div class="flex self-center">
+                  <img
+                    src="./assets/for-desktop/icons/star.svg"
+                    alt="star icon"
+                    class="w-[24px] h-[24px]" />
+                  <p
+                    class="text-gray-medium font-primary text-[18px] not-italic font-semibold leading-[130%] ml-[7px]">
+                    3.5
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- END TESTIMONIALS -->
+
+      <!-- START FAQs -->
+      <section class="w-full mx-auto bg-brand-primary">
+        <div
+          class="flex w-full justify-center py-[150px] bg-brand-primary bg space-x-[100px]">
+          <div class="flex flex-col [&>*:not(:last-child)]:mb-[20px]">
+            <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
+              <select
+                id="question_1"
+                class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
+                <option selected>How can we help your business?</option>
+                <option value="option_1">Option 1</option>
+                <option value="option_2">Option 2</option>
+                <option value="option_3">Option 3</option>
+                <option value="option_4">Option 4</option>
+              </select>
+            </div>
+
+            <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
+              <select
+                id="question_2"
+                class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
+                <option selected>What are the advantages of Bisnext</option>
+                <option value="option_1">Option 1</option>
+                <option value="option_2">Option 2</option>
+                <option value="option_3">Option 3</option>
+                <option value="option_4">Option 4</option>
+              </select>
+            </div>
+
+            <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
+              <select
+                id="question_3"
+                class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
+                <option selected>Let’s find an office near you?</option>
+                <option value="option_1">Option 1</option>
+                <option value="option_2">Option 2</option>
+                <option value="option_3">Option 3</option>
+                <option value="option_4">Option 4</option>
+              </select>
+            </div>
+
+            <div class="bg-[#222] w-[570px] h-[70px] px-[20px]">
+              <select
+                id="question_4"
+                class="bg-[#222] w-full font-semibold text-white text-[20px] h-[70px] outline-none">
+                <option selected>How IT consultancy experts work?</option>
+                <option value="option_1">Option 1</option>
+                <option value="option_2">Option 2</option>
+                <option value="option_3">Option 3</option>
+                <option value="option_4">Option 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="text-[14px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+              <h2>
+                <span class="gradient-text text-transparent animate-gradient">
+                  FAQs
+                </span>
+              </h2>
+            </div>
+
+            <h3
+              class="w-[415px] h-[108px] font-primary text-[40px] text-white font-semibold leading-[135%] mt-[20px]">
+              Be Kind to Your Mind Question & Answer
+            </h3>
+
+            <div class="w-[470px] h-auto shrink-0 mt-[30px]">
+              <p
+                class="text-[#AAA] text-[16px] font-secondary font-medium not-italic leading-[144%]">
+                Every designer needs the right tools to do the perfect job.
+                Thankfully, we can do that. I design products that are more than
+                pretty. I make them shippable and usable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END FAQs -->
+
+      <!-- START <<Have you project in mind?>> -->
+
+      <section class="w-[1140px] mx-auto py-[150px] bg-white">
+        <div class="flex flex-col items-center">
+          <div class="flex flex-col justify-center">
+            <div
+              class="text-[16px] text-center font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+              <h2>
+                <span class="gradient-text text-transparent animate-gradient">
+                  Have you project in mind?
+                </span>
+              </h2>
+            </div>
+
+            <h3
+              class="w-[668px] h-[162px] mt-[15px] font-primary text-[60px] text-center text-gray-strong font-semibold leading-[135%]">
+              Let’s Make Something Great Together!
+            </h3>
+
+            <a
+              href="#"
+              class="w-[250px] h-[250px] mt-[37px] shrink-0 rounded-full bg-[url('/assets/for-desktop/bg/BG.svg')] bg-contain bg-no-repeat relative self-center">
+              <span
+                class="w-[190px] text-white font-secondary text-[16px] not-italic font-semibold leading-[140%] tracking-[2.88px] absolute bottom-[46%] left-1/2 -translate-x-1/2">
+                CONTACT WITH US
+              </span>
+              <img
+                src="./assets/for-desktop/icons/arrow_2.svg"
+                alt="arrow icon image"
+                class="w-[24px] h-[24px] absolute bottom-[30%] left-1/2 -translate-x-1/2" />
+            </a>
+          </div>
+
+          <div class="mt-[100px]">
+            <a href="#">
+              <img
+                src="./assets/for-desktop/logos/xest_folio_logo.svg"
+                alt="xest folio label" />
+            </a>
+          </div>
+
+          <div class="flex w-full justify-between mt-[100px]">
+            <img src="./assets/for-desktop/logos/f_logo.svg" alt="f logo" />
+            <img src="./assets/for-desktop/logos/in_logo.svg" alt="in logo" />
+            <img
+              src="./assets/for-desktop/logos/instagram_logo.svg"
+              alt="instagram logos" />
+            <img src="./assets/for-desktop/logos/be_logo.svg" alt="be logo" />
+            <img
+              src="./assets/for-desktop/logos/ball_logo.svg"
+              alt="ball logo" />
+          </div>
+        </div>
+      </section>
+      <!-- END <<Have you project in mind?>> -->
+    </main>
+
+    <footer class="w-full h-[100px] border-t-4 border-[#BBB]">
+      <div
+        class="flex justify-between items-center mx-auto w-[1140px] h-[100px] text-[#ACACAC] font-primary text-[18px] not-italic font-normal leading-normal">
+        <p class="w-[365px]">© 2023 Ideapeel Inc. All Rights Reserved</p>
+        <p>Privacy Policy<span class="mx-4">|</span>Terms and Conditions</p>
       </div>
-    </section>
-    <!-- END <<Have you project in mind?>> -->
+    </footer>
 
-  </main>
-
-  <footer class="w-full h-[100px] border-t-4 border-[#BBB]">
-    <div
-      class="flex justify-between items-center mx-auto w-[1140px] h-[100px] text-[#ACACAC] font-primary text-[18px] not-italic font-normal leading-normal">
-      <p class="w-[365px]">© 2023 Ideapeel Inc. All Rights Reserved</p>
-      <p>Privacy Policy<span class="mx-4">|</span>Terms and Conditions</p>
-    </div>
-
-  </footer>
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
