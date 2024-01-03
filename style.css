@@ -34,11 +34,6 @@
   -webkit-text-stroke: 4px transparent;
 }
 
-.portfolio-images-style {
-  margin-right: 20.5px;
-  margin-bottom: 20.5px;
-}
-
 .testimonials-scroll-container-style {
   display: flex;
   flex-wrap: nowrap;
