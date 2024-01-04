@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./main.js", "./src/**/*.js"],
   theme: {
+    screens: {
+      lg: "1162px",
+      // => @media (min-width: 1150px) { ... }
+    },
     extend: {
       colors: {
         "brand-primary": "#181818",
