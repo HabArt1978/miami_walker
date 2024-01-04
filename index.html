@@ -13,7 +13,7 @@
 </head>
 
 <body class="w-full">
-  <header class="flex w-[880px] h-[77px] lg:w-[1140px] lg:h-[100px] mx-auto">
+  <header class="flex justify-between w-[327px] h-[70px] md:w-[880px] md:h-[77px] lg:w-[1140px] lg:h-[100px]  mx-auto">
     <a href="#" class="my-auto shrink-0">
       <picture>
         <source srcset="/assets/for-desktop/logos/xest_folio_logo.svg" media="(min-width: 1162px)" />
@@ -21,7 +21,7 @@
       </picture>
     </a>
 
-    <nav class="flex items-center w-full">
+    <nav class="hidden md:flex items-center w-full">
       <ul
         class="flex w-full items-center justify-end space-x-[36px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%]">
         <li><a href="#chapter-one">About</a></li>
@@ -40,34 +40,39 @@
         </li>
       </ul>
     </nav>
+
+    <button
+      class="flex md:hidden self-center w-[32px] h-[32px] bg-[url('/assets/for-mobile/icons/material-symbols_menu-rounded.svg')]">
+    </button>
   </header>
 
   <main class="w-full">
     <!-- START INTRODUCTION -->
-    <section class="w-[880px] mt-[48.6px] lg:w-[1140px] lg:mt-[63px] mx-auto">
-      <div class="flex mx-auto">
+    <section class="w-[327px] mt-[20px] md:w-[880px] md:mt-[48.6px] lg:w-[1140px] lg:mt-[63px] mx-auto">
+      <div class="flex flex-col-reverse items-center md:items-start md:flex md:flex-row mx-auto">
         <div class="flex flex-col">
-          <h1 class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic leading-[150%]">
+          <h1
+            class="font-secondary text-center md:text-start text-[62px] md:text-[130px] lg:text-[170px] font-extrabold uppercase not-italic leading-[150%] mt-[-30%] md:mt-0">
             <span class="gradient-text text-transparent animate-gradient">
               Miami
             </span>
           </h1>
 
           <h1
-            class="font-secondary text-[130px] lg:text-[170px] font-extrabold uppercase not-italic text-black -tracking-[6px] lg:-tracking-[8.5px] leading-[150%] z-10 mt-[-70px]">
-            Walke<span class="text-white">r</span>
+            class="font-secondary text-center md:text-start text-[62px] md:text-[130px] lg:text-[170px] font-extrabold uppercase not-italic text-black -tracking-[2.171px] md:-tracking-[6px] lg:-tracking-[8.5px] leading-[150%] z-10 mt-[-10px] md:mt-[-70px]">
+            Walke<span class="text-black md:text-white">r</span>
           </h1>
 
           <div
-            class="flex flex-col w-[446.915px] h-[47.774px] lg:w-[580px] lg:h-[62px] text-[16px] lg:text-[20px] shrink-0 font-secondary font-normal text-gray-medium leading-[165%]">
+            class="flex flex-col w-[300px] h-[77px] md:w-[446.915px] md:h-[47.774px] lg:w-[560px] lg:h-[62px] mt-[20px] md:mt-0 text-center md:text-start text-[16px] lg:text-[20px] shrink-0 font-secondary font-normal text-gray-medium leading-[165%]">
             <p>
-              Award Wining product designer based in Georgia. We <br />
-              create user-friendly interfaces for fast-growing startups.
+              Award Wining product designer based in Georgia. We create user-friendly interfaces for fast-growing
+              startups.
             </p>
           </div>
 
-          <div class="mt-[48.54px] lg:mt-[63px]">
-            <a href="#" class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
+          <div class="mx-auto md:mx-0 mt-[48.54px] lg:mt-[63px] ">
+            <a href="#" class="inline-flex bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
               <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
                 Book A Call
               </span>
@@ -79,21 +84,22 @@
         </div>
 
         <div
-          class="w-[431.504px] h-[538.61px] lg:w-[580px] lg:h-[699px] ml-[-64px] lg:ml-[-85px] bg-[url('/assets/for-tablets/images/unsplash_Vlbc1ScnRng_md.png')] lg:bg-[url('/assets/for-desktop/images/unsplash_Vlbc1ScnRng.png')] bg-no-repeat">
+          class="w-[327px] h-[402px] md:w-[431.504px] md:h-[538.61px] lg:w-[580px] lg:h-[699px] md:ml-[-64px] lg:ml-[-85px] bg-[url('/assets/for-mobile/images/unsplash_Vlbc1ScnRng_sm.png')] md:bg-[url('/assets/for-tablets/images/unsplash_Vlbc1ScnRng_md.png')] lg:bg-[url('/assets/for-desktop/images/unsplash_Vlbc1ScnRng.png')] bg-no-repeat">
         </div>
       </div>
     </section>
     <!-- END INTRODUCTION -->
 
     <!-- START TRUSTED BY -->
-    <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
+    <section class="w-[327px] md:w-[880px] lg:w-[1140px] mx-auto mt-[90px] md:mt-[100px] lg:mt-[150px]">
       <div class="flex flex-col">
-        <h2 class="font-inter text-[20px] text-gray-strong font-medium leading-[133%] tracking-[1px] text-center">
+        <h2
+          class="font-inter text-[14px] lg:text-[20px] text-gray-strong font-medium leading-[133%] tracking-[1px] text-center">
           Trusted By
         </h2>
 
-        <ul class="flex justify-between">
-          <li>
+        <ul class="flex justify-between mt-[20px]">
+          <li class="hidden md:block">
             <a href="#">
               <picture>
                 <source srcset="/assets/for-desktop/logos/paperz_logo.svg" media="(min-width: 1162px)" />
@@ -105,7 +111,8 @@
             <a href="#">
               <picture>
                 <source srcset="/assets/for-desktop/logos/dorfus_logo.svg" media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/logos/dorfus_logo_md.svg" alt="dorfus logo" />
+                <source srcset="/assets/for-tablets/logos/dorfus_logo_md.svg" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/logos/dorfus_logo_sm.svg" alt="dorfus logo" />
               </picture>
             </a>
           </li>
@@ -113,7 +120,8 @@
             <a href="#">
               <picture>
                 <source srcset="/assets/for-desktop/logos/martino_logo.svg" media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/logos/martino_logo_md.svg" alt="martino logo" />
+                <source srcset="/assets/for-tablets/logos/martino_logo_md.svg" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/logos/martino_logo_sm.svg" alt="martino logo" />
               </picture>
             </a>
           </li>
@@ -121,11 +129,12 @@
             <a href="#">
               <picture>
                 <source srcset="/assets/for-desktop/logos/square_logo.svg" media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/logos/square_logo_md.svg" alt="square logo" />
+                <source srcset="/assets/for-tablets/logos/square_logo_md.svg" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/logos/square_logo_sm.svg" alt="square logo" />
               </picture>
             </a>
           </li>
-          <li>
+          <li class="hidden md:block">
             <a href="#">
               <picture>
                 <source srcset="/assets/for-desktop/logos/gabona_logo.svg" media="(min-width: 1162px)" />
@@ -139,8 +148,8 @@
     <!-- END TRUSTED BY -->
 
     <!-- START FEATURES -->
-    <section class="w-[880px] lg:w-[1140px] mx-auto mt-[100px] lg:mt-[150px]">
-      <div class="flex justify-between">
+    <section class="w-[327px] md:w-[880px] lg:w-[1140px] mx-auto mt-[80px] md:mt-[100px] lg:mt-[150px]">
+      <div class="flex flex-col md:flex md:flex-row justify-between">
         <div>
           <div class="text-[14px] lg:text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
             <h2>
@@ -151,12 +160,13 @@
           </div>
 
           <h3
-            class="w-[339px] h-[86px] lg:w-[423px] lg:h-[108px] text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
+            class="w-[339px] h-[86px] lg:w-[423px] lg:h-[108px] text-[28px] md:text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
             Giving Your Business Some Great Ideas
           </h3>
 
-          <div class="w-[363px] lg:w-[470px] mt-[32px] h-auto shrink-0">
-            <p class="text-[12px] lg:text-[16px] text-gray-light font-secondary font-medium not-italic leading-[140%]">
+          <div class="w-[327px] md:w-[363px] lg:w-[470px] mt-[10px] md:mt-[32px] h-auto shrink-0">
+            <p
+              class="text-[11.5px] lg:text-[16px] text-gray-light font-secondary font-medium not-italic leading-[140%]">
               Every designer needs the right tools to do the perfect job.
               Thankfully, we can do that. I design products that are more than
               pretty. I make them shippable and usable.
@@ -175,81 +185,85 @@
           </div>
         </div>
 
-        <div class="flex w-[650px]">
-          <div class="flex flex-wrap justify-end [&>*:nth-child(1n)]:mr-[30px] [&>*:nth-child(2n)]:mr-[10px]">
-            <div class="mt-[60px]">
+        <div class="flex flex-col md:flex md:flex-row w-full md:w-[650px]">
+          <div class="flex flex-wrap justify-end md:[&>*:nth-child(1n)]:mr-[30px] md:[&>*:nth-child(2n)]:mr-[10px]">
+            <div class="mt-[40px] md:mt-[60px]">
               <picture>
                 <source srcset="
                       /assets/for-desktop/images/ux_experience.png
                     " media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/images/ux_experience_md.png" alt="ux experience process image" />
+                <source srcset="/assets/for-tablets/images/ux_experience_md.png" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/images/ux_experience_sm.png" alt="ux experience process image" />
               </picture>
               <div>
                 <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                  class="font-primary text-gray-strong text-[24px] my-[8px] md:my-0 md:text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
                   UX Experience
                 </h4>
                 <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                  class="w-[327px] md:w-[210px] lg:w-[270px] text-[15.8px] md:text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
                   I design products that are more than pretty. I make them
                   usable.
                 </p>
               </div>
             </div>
 
-            <div>
+            <div class="mt-[40px] md:mt-0">
               <picture>
                 <source srcset="
                       /assets/for-desktop/images/product_analysis.png
                     " media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/images/product_analysis_md.png" alt="product analysis process image" />
+                <source srcset="/assets/for-tablets/images/product_analysis_md.png" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/images/product_analysis_sm.png" alt="product analysis process image" />
               </picture>
               <div>
                 <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                  class="font-primary text-gray-strong my-[8px] md:my-0 text-[24px] md:text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
                   Product Analysis
                 </h4>
                 <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                  class="w-[327px] md:w-[210px] lg:w-[270px] text-[15.8px] md:text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
                   I design products that are more than pretty. I make them
                   usable.
                 </p>
               </div>
             </div>
 
-            <div class="mt-[60px]">
+            <div class="mt-[40px] md:mt-[60px]">
               <picture>
                 <source srcset="/assets/for-desktop/images/ui_design.png" media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/images/ui_design_md.png" alt="ui design process image" />
+                <source srcset="/assets/for-tablets/images/ui_design_md.png" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/images/ui_design_sm.png" alt="ui design process image" />
               </picture>
               <div>
                 <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                  class="font-primary text-gray-strong my-[8px] md:my-0 text-[24px] md:text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
                   UI Design
                 </h4>
                 <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                  class="w-[327px] md:w-[210px] lg:w-[270px] text-[15.8px] md:text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
                   I design products that are more than pretty. I make them
                   usable.
                 </p>
               </div>
             </div>
 
-            <div>
+            <div class="mt-[40px] md:mt-0">
               <picture>
                 <source srcset="
                       /assets/for-desktop/images/product_design.png
                     " media="(min-width: 1162px)" />
-                <img src="/assets/for-tablets/images/product_design_md.png" alt="product design process image" />
+                <source srcset="/assets/for-tablets/images/product_design_md.png" media="(min-width: 900px)" />
+                <img src="/assets/for-mobile/images/product_design_sm.png" alt="product design process image" />
               </picture>
 
               <div>
                 <h4
-                  class="font-primary text-gray-strong text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
+                  class="font-primary text-gray-strong my-[8px] md:my-0 text-[24px] md:text-[18px] lg:text-[24px] not-italic font-bold leading-[140%]">
                   Product Design
                 </h4>
                 <p
-                  class="w-[210px] lg:w-[270px] text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
+                  class="w-[327px] md:w-[210px] lg:w-[270px] text-[15.8px] md:text-[12px] lg:text-[16px] h-[auto] shrink-0 text-gray-light font-secondary not-italic font-medium leading-[140%]">
                   I design products that are more than pretty. I make them
                   usable.
                 </p>
@@ -259,7 +273,7 @@
         </div>
       </div>
 
-      <div class="flex justify-between text-center mt-[100px]">
+      <div class="hidden md:flex justify-between text-center mt-[100px]">
         <div>
           <span
             class="text-[54px] lg:text-[70px] font-primary not-italic font-bold leading-[140%] gradient-border-text animate-gradient">
@@ -301,8 +315,8 @@
     <!-- END FEATURES -->
 
     <!-- START PORTFOLIO -->
-    <section class="w-[880px] lg:w-[1140px] my-[100px] lg:my-[150px] mx-auto">
-      <div class="flex justify-between">
+    <section class="w-[327px] md:w-[880px] lg:w-[1140px] py-[90px] md:py-[100px] lg:py-[150px] mx-auto">
+      <div class="flex flex-col md:flex md:flex-row justify-between">
         <div>
           <div
             class="text-[14px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
@@ -313,7 +327,8 @@
             </h2>
           </div>
 
-          <h3 class="text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
+          <h3
+            class="text-[28px] md:text-[32px] lg:text-[40px] font-primary text-gray-strong font-semibold leading-[135%]">
             Some Of Our Best Works
           </h3>
         </div>
@@ -331,11 +346,12 @@
       </div>
 
       <div
-        class="flex lg:flex-wrap overflow-x-auto mt-[60px] [&>*:is(picture)]:mr-4 lg:[&>*:is(picture)]:mr-auto lg:[&>*:is(picture:nth-child(3n))]:mr-0 lg:[&>*:is(picture:nth-last-child(n+4))]:mb-[20px]">
-        <picture class="flex-shrink-0">
+        class="flex flex-col md:flex md:flex-row lg:flex-wrap md:overflow-x-auto mt-[60px] md:[&>*:is(picture)]:mr-3 lg:[&>*:is(picture)]:mr-auto lg:[&>*:is(picture:nth-child(3n))]:mr-0 lg:[&>*:is(picture:nth-last-child(n+4))]:mb-[20px]">
+        <picture class="flex-shrink-0 mb-6 md:mb-0">
           <source srcset="/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1162px)" />
-          <img src="/assets/for-tablets/images/portfolio_photo_1_md.png" alt="portfolio photos 1" />
-          <div class="flex flex-col mt-[-75px] lg:mt-[-100px] pl-[25px] lg:pl-[39px]">
+          <source srcset="/assets/for-tablets/images/portfolio_photo_1_md.png" media="(min-width: 900px)" />
+          <img src="/assets/for-mobile/images/portfolio_photo_1_sm.png" alt="portfolio photos 1" />
+          <div class="flex flex-col mt-[-65px] md:mt-[-75px] lg:mt-[-100px] pl-[25px] lg:pl-[39px]">
             <div
               class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
               <span class="gradient-text text-transparent animate-gradient">
@@ -343,55 +359,58 @@
               </span>
             </div>
 
-            <span class="font-primary text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
+            <span
+              class="font-primary text-[24px] md:text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
               Greenfy Website
             </span>
           </div>
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 mb-2.5 md:mb-0">
           <source srcset="/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1162px)" />
-          <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_2_md.png"
+          <source srcset="/assets/for-tablets/images/portfolio_photo_2_md.png" media="(min-width: 900px)" />
+          <img class="portfolio-images-style" src="/assets/for-mobile/images/portfolio_photo_2_sm.png"
             alt="portfolio photos 2" />
         </picture>
 
         <picture class="flex-shrink-0">
           <source srcset="/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1162px)" />
-          <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_3_md.png"
+          <source srcset="/assets/for-tablets/images/portfolio_photo_3_md.png" media="(min-width: 900px)" />
+          <img class="portfolio-images-style" src="/assets/for-mobile/images/portfolio_photo_3_sm.png"
             alt="portfolio photos 3" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_3_md.png"
             alt="portfolio photos 4" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_2_md.png"
             alt="portfolio photos 5" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_1_md.png"
             alt="portfolio photos 7" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_1.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_1_md.png"
             alt="portfolio photos 8" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_2.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_2_md.png"
             alt="portfolio photos 8" />
         </picture>
 
-        <picture class="flex-shrink-0">
+        <picture class="flex-shrink-0 hidden md:block">
           <source srcset="/assets/for-desktop/images/portfolio_photo_3.png" media="(min-width: 1162px)" />
           <img class="portfolio-images-style" src="/assets/for-tablets/images/portfolio_photo_3_md.png"
             alt="portfolio photos 9" />
@@ -402,10 +421,11 @@
 
     <!-- START LATEST BLOG -->
     <section class="bg-brand-primary">
-      <div class="w-[880px] lg:w-[1140px] py-[100px] lg:py-[150px] mx-auto bg-brand-primary">
-        <div class="flex justify-between">
+      <div class="w-[327px] md:w-[880px] lg:w-[1140px] py-[90px] md:py-[100px] lg:py-[150px] mx-auto bg-brand-primary">
+        <div class="flex flex-col md:flex md:flex-row justify-between">
           <div class="w-[357px] h-[86px] lg:w-[447px] lg:h-[108px]">
-            <div class="text-[14px] lg:text-[16px] font-secondary font-semibold leading-[160%] tracking-[2.1px]">
+            <div
+              class="text-[14px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
               <h2>
                 <span class="gradient-text text-transparent animate-gradient">
                   LATEST BLOG
@@ -413,14 +433,13 @@
               </h2>
             </div>
 
-            <h3 class="font-primary text-[32px] lg:text-[40px] text-white font-semibold leading-[135%]">
+            <h3 class="text-[28px] md:text-[32px] lg:text-[40px] font-primary text-white font-semibold leading-[135%]">
               Check Some of Latest News & Articles
             </h3>
           </div>
 
 
-
-          <div class="self-center">
+          <div class="mt-[80px]">
             <button class="inline-flex items-start bg-white py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
               <span
                 class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-gray-strong leading-[100%]">
@@ -445,16 +464,18 @@
 
             <div
               class="absolute right-0 top-[220px] lg:top-[275px] pl-[15px] pt-[6px] lg:pl-[20px] lg:pt-[10px] bg-brand-primary">
-              <span class="text-[#888] font-secondary text-[11px] lg:text-[13px] not-italic font-medium leading-[140%]">
+              <span
+                class="text-[#888] font-secondary text-[8px] md:text-[11px] lg:text-[13px] not-italic font-medium leading-[140%]">
                 UI Design | 22 May 2023
               </span>
               <h4
-                class="w-[313px] h-[64px] lg:w-[392px] lg:h-[82px] text-[24px] lg:text-[30px] font-primary not-italic font-semibold leading-[135%]">
+                class="w-[313px] h-[64px] lg:w-[392px] lg:h-[82px] text-[18px] md:text-[24px] lg:text-[30px] font-primary not-italic font-semibold leading-[135%]">
                 What is UI Design in Front End Design?
               </h4>
 
               <div class="w-[350px] h-[51px] lg:w-[433px] lg:h-[66px] mt-[10px] lg:mt-[20px] shrink-0">
-                <p class="text-[#AAA] font-secondary text-[13px] lg:text-[16px] not-italic font-medium leading-[140%]">
+                <p
+                  class="text-[#AAA] font-secondary text-[10px] md:text-[13px] lg:text-[16px] not-italic font-medium leading-[140%]">
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising pain was born and I will
                   give you a complete account of the system
@@ -462,17 +483,25 @@
               </div>
 
               <a
-                class="inline-flex items-center font-secondary text-[13px] lg:text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[10px] lg:mt-[20px] py-[10px]">
-                <span class="pr-1 lg:pr-2">READ MORE</span>
-                <img src="/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="15px" height="15px"
-                  class="-rotate-135 shrink-0 self-center" />
+                class="inline-flex items-center font-secondary text-[10px] md:text-[13px] lg:text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[10px] lg:mt-[20px] py-[10px]">
+                <span class="pr-1 lg:pr-2 items-baseline">READ MORE</span>
+                <picture>
+                  <source srcset="/assets/for-desktop/icons/arrow.svg" media="(min-width: 1162px)" width="20px"
+                    height="20px" />
+                  <source srcset="/assets/for-desktop/icons/arrow.svg" media="(min-width: 900px)" width="16px"
+                    height="16px" />
+                  <img src="/assets/for-mobile/icons/arrow_1_sm.svg" alt="arrow svg icon" width="20px" height="20px"
+                    class="-rotate-135 shrink-0 self-center" />
+                </picture>
+
+
               </a>
             </div>
           </div>
 
           <!-- CARD 2 -->
 
-          <div class="relative w-[410px] h-[350px] lg:w-[533px] lg:h-[545px] text-white">
+          <div class="relative mt-20 w-[410px] h-[350px] lg:w-[533px] lg:h-[545px] text-white">
             <picture>
               <source srcset="/assets/for-desktop/images/layer_expert_2.png" media="(min-width: 1162px)">
               <img src="/assets/for-tablets/images/layer_expert_2_md.png" alt="development photo" />
@@ -499,7 +528,7 @@
               <a
                 class="inline-flex items-center font-secondary text-[13px] lg:text-[16px] not-italic font-bold leading-[140%] tracking-[2.88px] mt-[10px] lg:mt-[20px] py-[10px]">
                 <span class="pr-1 lg:pr-2">READ MORE</span>
-                <img src="/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="15px" height="15px"
+                <img src="/assets/for-desktop/icons/arrow.svg" alt="arrow svg icon" width="20px" height="20px"
                   class="-rotate-135 shrink-0 self-center" />
               </a>
             </div>
