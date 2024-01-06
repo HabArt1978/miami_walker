@@ -84,3 +84,64 @@
     margin-right: 20px;
   }
 }
+
+/*---- START Анимация ссылок header ---- */
+nav ul li a:before,
+nav ul li:before,
+nav ul li:after {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background: linear-gradient(to right, #a855f7, #ec4899, #eab308);
+  transition: 0.4s ease;
+}
+
+nav ul li {
+  position: relative;
+  padding: 4px 15px;
+  margin: 0 5px;
+  height: 100%;
+  display: flex;
+}
+
+nav ul li a {
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 4px 3px;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+nav ul li a:before {
+  left: 0;
+  bottom: 66.66%;
+}
+
+nav ul li:before {
+  right: 0;
+  top: 33.33%;
+}
+
+nav ul li:after {
+  left: 0;
+  bottom: 0;
+}
+
+nav ul li:hover a {
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+}
+
+nav ul li:hover a:before {
+  width: 100%;
+}
+
+nav ul li:hover:before,
+nav ul li:hover:after {
+  width: 100%;
+}
+/*---- END Анимация ссылок header ---- */
+
+/*---- START Анимация */

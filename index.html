@@ -23,27 +23,36 @@
 
     <nav class="hidden md:flex items-center w-full">
       <ul
-        class="flex w-full items-center justify-end space-x-[36px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%]">
+        class="flex w-full items-center justify-end space-x-[20px] mr-[20px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%] [&>*: -last-child(1)]:mr-[20px]">
         <li><a href="#chapter-one">About</a></li>
         <li><a href="#chapter-two">Service</a></li>
         <li><a href="#chapter-three">Blogs</a></li>
         <li><a href="#chapter-four">FAQ</a></li>
-        <li class="content-center">
-          <a href="#" class="inline-flex items-start bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-            <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-              Contact Me
-            </span>
-          </a>
-          <div
-            class="w-[120.69px] h-[46px] lg:w-[154.20px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
-          </div>
-        </li>
       </ul>
     </nav>
 
-    <button
+    <div class="relative hidden md:block self-center w-[190px] lg:w-[220px] group">
+      <div
+        class="absolute z-10 top-3 left-2 lg:top-4 lg:left-2 group-hover:top-2.5 group-hover:left-1.5 lg:group-hover:top-3.5 lg:group-hover:left-1.5 text-white transition-all duration-200">
+        <a href="#" class="bg-black transition-all duration-200
+        pt-[12px] pb-[15px] px-[25px] lg:py-[20px] lg:px-[30px]">
+          <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic leading-[100%]">
+            Contact Me
+          </span>
+        </a>
+      </div>
+
+      <div class="
+        relative top-1.5 left-3.5 lg:top-1.5 lg:left-3.5
+        group-hover:top-2 group-hover:left-4 lg:group-hover:top-2 lg:group-hover:left-4 transition-all duration-200
+        w-[122.69px] h-[48px] lg:w-[154px] lg:h-[58px]
+        bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
+      </div>
+    </div>
+
+    <div
       class="flex md:hidden self-center w-[32px] h-[32px] bg-[url('/assets/for-mobile/icons/material-symbols_menu-rounded.svg')]">
-    </button>
+    </div>
   </header>
 
   <main class="w-full">
@@ -71,14 +80,24 @@
             </p>
           </div>
 
-          <div class="mx-auto md:mx-0 mt-[48.54px] lg:mt-[63px] ">
-            <a href="#" class="inline-flex bg-black py-[16px] px-[24px] lg:py-[20px] lg:px-[30.39px]">
-              <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic text-white leading-[100%]">
-                Book A Call
-              </span>
-            </a>
+
+
+          <div class="relative self-start w-[128px] lg:w-[175px] group mx-auto md:mx-0 mt-[48.54px] lg:mt-[63px]">
             <div
-              class="w-[117.81px] h-[46px] lg:w-[150.53px] lg:h-[58px] mt-[-39px] lg:mt-[-50px] ml-[7px] lg:ml-[7px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
+              class="absolute z-10 top-3 left-2 lg:top-4 lg:left-2 group-hover:top-2.5 group-hover:left-1.5 lg:group-hover:top-3.5 lg:group-hover:left-1.5 text-white transition-all duration-200">
+              <a href="#" class="bg-black transition-all duration-200
+              pt-[12px] pb-[15px] px-[25px] lg:py-[20px] lg:px-[30px]">
+                <span class="text-[14px] lg:text-[18px] font-button font-medium not-italic leading-[100%]">
+                  Book A Call
+                </span>
+              </a>
+            </div>
+
+            <div class="
+              relative top-1.5 left-3.5 lg:top-1.5 lg:left-3.5
+              group-hover:top-2 group-hover:left-4 lg:group-hover:top-2 lg:group-hover:left-4 transition-all duration-200
+              w-[119.69px] h-[48px] lg:w-[150px] lg:h-[58px]
+              bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%">
             </div>
           </div>
         </div>
@@ -98,7 +117,7 @@
           Trusted By
         </h2>
 
-        <ul class="flex justify-between mt-[20px]">
+        <ul class="icon-link flex justify-between mt-[20px]">
           <li class="hidden md:block">
             <a href="#">
               <picture>
