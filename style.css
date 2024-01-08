@@ -144,4 +144,57 @@ nav ul li:hover:after {
 }
 /*---- END Анимация ссылок header ---- */
 
-/*---- START Анимация */
+/*---- START Кнопка ----*/
+
+.primary-button {
+  display: block;
+  color: #fff;
+  padding: 12px;
+  background-color: #000;
+  position: relative;
+  font-size: 14px;
+  padding: 14px 24px;
+  transition: top 100ms, left 100ms;
+  top: 0;
+  left: 0;
+}
+.primary-button:hover {
+  top: -2px;
+  left: -2px;
+}
+
+.primary-button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #3c33ef, #f43366);
+  border-radius: inherit;
+  transition: transform 100ms;
+  transform: translate3d(6px, 5px, 0);
+}
+.primary-button:hover::before {
+  transform: translate3d(9px, 7px, 0);
+}
+
+/*
+* Prevents issues when the parent creates a
+* stacking context. (For example, using the transform
+* property )
+*/
+.primary-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+/*---- END Кнопка ----*/
