@@ -25,36 +25,22 @@
         </picture>
       </a>
 
-      <nav class="hidden md:flex items-center w-full">
-        <ul
-          class="flex w-full items-center justify-end space-x-[20px] mr-[20px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%] [&>*: -last-child(1)]:mr-[20px]">
-          <li><a href="#chapter-one">About</a></li>
-          <li><a href="#chapter-two">Service</a></li>
-          <li><a href="#chapter-three">Blogs</a></li>
-          <li><a href="#chapter-four">FAQ</a></li>
-        </ul>
-      </nav>
+      <div class="flex items-center">
+        <nav class="hidden md:flex items-center">
+          <ul
+            class="flex w-full items-center justify-end space-x-[20px] mr-[20px] font-secondary text-[18px] text-gray-strong font-medium lg:font-semibold leading-[150%] [&>*: -last-child(1)]:mr-[20px]">
+            <li><a href="#chapter-one">About</a></li>
+            <li><a href="#chapter-two">Service</a></li>
+            <li><a href="#chapter-three">Blogs</a></li>
+            <li><a href="#chapter-four">FAQ</a></li>
+          </ul>
+        </nav>
 
-      <div
-        class="relative hidden md:block self-center w-[190px] lg:w-[220px] group">
-        <div
-          class="absolute z-10 top-3 left-2 lg:top-4 lg:left-2 group-hover:top-2.5 group-hover:left-1.5 lg:group-hover:top-3.5 lg:group-hover:left-1.5 text-white transition-all duration-200">
-          <a
-            href="#"
-            class="bg-black transition-all duration-200 pt-[12px] pb-[15px] px-[25px] lg:py-[20px] lg:px-[30px]">
-            <span
-              class="text-[14px] lg:text-[18px] font-button font-medium not-italic leading-[100%]">
-              Contact Me
-            </span>
-          </a>
-        </div>
+        <a href="#" class="primary-button" draggable="false">Contact Me</a>
 
         <div
-          class="relative top-1.5 left-3.5 lg:top-1.5 lg:left-3.5 group-hover:top-2 group-hover:left-4 lg:group-hover:top-2 lg:group-hover:left-4 transition-all duration-200 w-[122.69px] h-[48px] lg:w-[154px] lg:h-[58px] bg-gradient-to-r from-gradient-blue from-8% to-gradient-red to-91%"></div>
+          class="flex md:hidden self-center w-[32px] h-[32px] bg-[url('/assets/for-mobile/icons/material-symbols_menu-rounded.svg')]"></div>
       </div>
-
-      <div
-        class="flex md:hidden self-center w-[32px] h-[32px] bg-[url('/assets/for-mobile/icons/material-symbols_menu-rounded.svg')]"></div>
     </header>
 
     <main class="w-full">
@@ -413,7 +399,8 @@
 
         <div
           class="flex flex-col md:flex md:flex-row lg:flex-wrap md:overflow-x-auto mt-[60px] md:[&>*:is(picture)]:mr-3 lg:[&>*:is(picture)]:mr-auto lg:[&>*:is(picture:nth-child(3n))]:mr-0 lg:[&>*:is(picture:nth-last-child(n+4))]:mb-[20px]">
-          <picture class="flex-shrink-0 mb-6 md:mb-0">
+          <picture
+            class="flex-shrink-0 mb-6 md:mb-0 group relative overflow-hidden">
             <source
               srcset="/assets/for-desktop/images/portfolio_photo_1.png"
               media="(min-width: 1162px)" />
@@ -423,8 +410,9 @@
             <img
               src="/assets/for-mobile/images/portfolio_photo_1_sm.png"
               alt="portfolio photos 1" />
-            <div
-              class="flex flex-col mt-[-65px] md:mt-[-75px] lg:mt-[-100px] pl-[25px] lg:pl-[39px]">
+            <a
+              href="#"
+              class="absolute flex flex-col justify-end bg-black w-full h-full bg-opacity-50 pl-[25px] lg:pl-[39px] pb-7 transition-all duration-300 top-full group-hover:top-0">
               <div
                 class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
                 <span class="gradient-text text-transparent animate-gradient">
@@ -436,10 +424,11 @@
                 class="font-primary text-[24px] md:text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
                 Greenfy Website
               </span>
-            </div>
+            </a>
           </picture>
 
-          <picture class="flex-shrink-0 mb-2.5 md:mb-0">
+          <picture
+            class="flex-shrink-0 mb-2.5 md:mb-0 group relative overflow-hidden">
             <source
               srcset="/assets/for-desktop/images/portfolio_photo_2.png"
               media="(min-width: 1162px)" />
@@ -450,9 +439,25 @@
               class="portfolio-images-style"
               src="/assets/for-mobile/images/portfolio_photo_2_sm.png"
               alt="portfolio photos 2" />
+
+            <a
+              href="#"
+              class="absolute flex flex-col justify-end bg-black w-full h-full bg-opacity-50 pl-[25px] lg:pl-[25px] pb-7 transition-all duration-300 top-full group-hover:top-0">
+              <div
+                class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+                <span class="gradient-text text-transparent animate-gradient">
+                  Typography
+                </span>
+              </div>
+
+              <span
+                class="font-primary text-[24px] md:text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
+                Text
+              </span>
+            </a>
           </picture>
 
-          <picture class="flex-shrink-0">
+          <picture class="flex-shrink-0 group relative overflow-hidden">
             <source
               srcset="/assets/for-desktop/images/portfolio_photo_3.png"
               media="(min-width: 1162px)" />
@@ -463,6 +468,22 @@
               class="portfolio-images-style"
               src="/assets/for-mobile/images/portfolio_photo_3_sm.png"
               alt="portfolio photos 3" />
+
+            <a
+              href="#"
+              class="absolute flex flex-col justify-end bg-black w-full h-full bg-opacity-50 pl-[25px] lg:pl-[25px] pb-7 transition-all duration-300 top-full group-hover:top-0">
+              <div
+                class="text-[11px] lg:text-[16px] font-secondary uppercase font-semibold leading-[160%] tracking-[2.1px]">
+                <span class="gradient-text text-transparent animate-gradient">
+                  Design
+                </span>
+              </div>
+
+              <span
+                class="font-primary text-[24px] md:text-[30px] lg:text-[40px] text-rose-200 font-semibold leading-[135%]">
+                Photography
+              </span>
+            </a>
           </picture>
 
           <picture class="flex-shrink-0 hidden md:block">
