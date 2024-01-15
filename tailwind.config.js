@@ -5,8 +5,9 @@ export default {
     screens: {
       lg: "1162px",
       // => @media (min-width: 1150px) { ... }
-      md: "600px",
+      md: "880px",
       // => @media (min-width: 900px) { ... }
+      sm: "600px",
     },
     extend: {
       colors: {
