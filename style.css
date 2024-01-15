@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 1162px) {
+  .container {
+    max-width: 880px;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
 .gradient-text {
   background: linear-gradient(
     to left,
@@ -15,6 +32,24 @@
   );
   background-size: 300% 300%;
   background-clip: text;
+  color: transparent;
+}
+@media (min-width: 600px) {
+  .sm\:gradient-text {
+    background: linear-gradient(
+      to left,
+      #3b82f6,
+      #ec4899,
+      #eab308,
+      #ec4899,
+      #3b82f6,
+      #ec4899,
+      #eab308
+    );
+    background-size: 300% 300%;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .gradient-border-text {
@@ -34,57 +69,6 @@
   -webkit-text-stroke: 4px transparent;
 }
 
-.testimonials-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  justify-content: center;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.testimonials-container > div {
-  flex-shrink: 0;
-  border: 1px solid #f6f6f6;
-}
-
-@media (min-width: 327px) {
-  .testimonials-container > div:nth-child(n + 4) {
-    display: none;
-  }
-
-  .testimonials-container > div {
-    margin: 8px 8px 18px 8px;
-  }
-
-  .testimonials-container {
-    padding-top: 50px;
-    padding-bottom: 0px;
-  }
-}
-
-@media (min-width: 900px) {
-  .testimonials-container > div:nth-child(n + 4) {
-    display: flex;
-  }
-  .testimonials-container {
-    flex-direction: row;
-  }
-  .testimonials-container > div {
-    flex-shrink: 0;
-    border: 1px solid #f6f6f6;
-  }
-  .testimonials-container > div:first-child {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .testimonials-container > div:not(:first-child) {
-    margin-right: 20px;
-  }
-}
-
 /*---- START Анимация ссылок header ---- */
 nav ul li a:before,
 nav ul li:before,
@@ -96,15 +80,10 @@ nav ul li:after {
   background: linear-gradient(to right, #a855f7, #ec4899, #eab308);
   transition: 0.4s ease;
 }
-
 nav ul li {
   position: relative;
-  padding: 4px 15px;
-  margin: 0 5px;
-  height: 100%;
   display: flex;
 }
-
 nav ul li a {
   color: black;
   letter-spacing: 1px;
@@ -113,31 +92,25 @@ nav ul li a {
   transition: 0.4s ease;
   z-index: 1;
 }
-
 nav ul li a:before {
   left: 0;
   bottom: 66.66%;
 }
-
 nav ul li:before {
   right: 0;
   top: 33.33%;
 }
-
 nav ul li:after {
   left: 0;
   bottom: 0;
 }
-
 nav ul li:hover a {
   color: white;
   text-shadow: 1px 1px 5px #000;
 }
-
 nav ul li:hover a:before {
   width: 100%;
 }
-
 nav ul li:hover:before,
 nav ul li:hover:after {
   width: 100%;
@@ -147,54 +120,149 @@ nav ul li:hover:after {
 /*---- START Кнопка ----*/
 
 .primary-button {
-  display: block;
-  color: #fff;
-  padding: 12px;
-  background-color: #000;
   position: relative;
-  font-size: 14px;
-  padding: 14px 24px;
-  transition: top 100ms, left 100ms;
+}
+.primary-button :first-child {
+  display: block;
+  position: relative;
+  z-index: 2;
   top: 0;
   left: 0;
+  transition: top 150ms, left 150ms;
+  padding: 20px 30px;
+  background-color: #000;
+  color: #fff;
+  line-height: 100%;
 }
-.primary-button:hover {
+.primary-button--light :first-child {
+  background-color: #fff;
+  color: #000;
+}
+.primary-button:hover :first-child {
   top: -2px;
   left: -2px;
 }
-
-.primary-button::before {
-  content: "";
-  z-index: -1;
+.primary-button > .primary-button__shadow {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  z-index: 1;
+  top: 5px;
+  left: 6.61px;
+  bottom: -5px;
+  right: -6.61px;
+  transition: top 150ms, left 150ms, bottom 150ms, right 150ms;
   background: linear-gradient(to right, #3c33ef, #f43366);
   border-radius: inherit;
-  transition: transform 100ms;
-  transform: translate3d(6px, 5px, 0);
 }
-.primary-button:hover::before {
-  transform: translate3d(9px, 7px, 0);
-}
-
-/*
-* Prevents issues when the parent creates a
-* stacking context. (For example, using the transform
-* property )
-*/
-.primary-button::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
+.primary-button:hover > .primary-button__shadow {
+  top: 7px;
+  left: 8.61px;
+  bottom: -7px;
+  right: -8.61px;
 }
 
 /*---- END Кнопка ----*/
+
+/*---- START Testimonials ----*/
+
+.testimonials-carousel {
+  overflow: hidden;
+  position: relative;
+
+  --item-width--md: 481px;
+  --item-height--md: 270px;
+  --item-width--lg: 545px;
+  --item-height--lg: 256px;
+
+  --items-spacing: 30px;
+}
+.testimonials-carousel__track {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.testimonials-carousel__item {
+  flex-shrink: 0;
+  border: 1px solid #f6f6f6;
+}
+.testimonials-carousel__item:nth-child(n + 5) {
+  display: none;
+}
+
+@media (min-width: 880px) {
+  .testimonials-carousel {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  .testimonials-carousel::before,
+  .testimonials-carousel::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 200px;
+  }
+  .testimonials-carousel::before {
+    left: 0;
+  }
+  .testimonials-carousel::after {
+    right: 0;
+    transform: rotateZ(180deg);
+  }
+
+  .testimonials-carousel__track {
+    flex-direction: row;
+    animation: scroll 50s linear infinite;
+    width: calc(10 * calc(545px + 30px));
+    max-width: none;
+    margin-right: none;
+    margin-left: none;
+  }
+
+  .testimonials-carousel__item {
+    width: var(--item-width--md);
+    height: var(--item-height--md);
+  }
+  .testimonials-carousel__item:nth-child(n + 5) {
+    display: block;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(calc(-5 * var(--item-width--md)) + calc(-5 * var(--items-spacing)))
+      );
+    }
+  }
+}
+
+@media (min-width: 1162px) {
+  .testimonials-carousel__item {
+    width: var(--item-width--lg);
+    height: var(--item-height--lg);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(calc(-5 * var(--item-width--lg)) + calc(-5 * var(--items-spacing)))
+      );
+    }
+  }
+}
+
+/*---- END Testimonials ----*/
