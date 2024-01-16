@@ -220,7 +220,7 @@ nav ul li:hover:after {
 
   .testimonials-carousel__track {
     flex-direction: row;
-    animation: scroll 50s linear infinite;
+    animation: scroll 120s linear infinite;
     width: calc(10 * calc(545px + 30px));
     max-width: none;
     margin-right: none;
