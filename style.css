@@ -266,3 +266,19 @@ nav ul li:hover:after {
 }
 
 /*---- END Testimonials ----*/
+
+/*---- START FAQs details */
+
+details {
+  user-select: none;
+}
+
+details summary svg {
+  transition: all 0.3s;
+  transform: rotate(90deg);
+}
+details[open] summary svg {
+  transform: rotate(-90deg);
+}
+
+/*---- END FAQs details */
