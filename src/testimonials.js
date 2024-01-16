@@ -1,10 +1,12 @@
+import { baseUrl } from "../vite.config";
+
 const getAvatarUrl = (idx) =>
   [
-    `/assets/for-desktop/avatars/user_avatar_1.svg`,
-    `/assets/for-desktop/avatars/user_avatar_2.svg`,
-    `/assets/for-desktop/avatars/user_avatar_3.svg`,
-    `/assets/for-desktop/avatars/user_avatar_2.svg`,
-    `/assets/for-desktop/avatars/user_avatar_1.svg`,
+    baseUrl(`/assets/for-desktop/avatars/user_avatar_1.svg`),
+    baseUrl(`/assets/for-desktop/avatars/user_avatar_2.svg`),
+    baseUrl(`/assets/for-desktop/avatars/user_avatar_3.svg`),
+    baseUrl(`/assets/for-desktop/avatars/user_avatar_2.svg`),
+    baseUrl(`/assets/for-desktop/avatars/user_avatar_1.svg`),
   ][idx % 5];
 
 const getUserName = (idx) =>
